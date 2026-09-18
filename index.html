@@ -1,0 +1,233 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian — Time, Held Precisely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<header class="nav" id="siteNav">
+  <a href="#top" class="nav__mark">MERIDIAN</a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#assembly">Craft</a>
+    <a href="#movement">Movement</a>
+    <a href="#materials">Materials</a>
+    <a href="#editions">Editions</a>
+  </nav>
+  <a href="#reserve" class="nav__cta">Reserve</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero__watch-wrap">
+      <div class="watch-stage" id="heroStage">
+        <div class="watch" id="heroWatch">
+          <div class="watch__case"></div>
+          <div class="watch__bezel"></div>
+          <div class="watch__dial">
+            <div class="watch__indices" id="heroIndices"></div>
+            <div class="watch__brand">MERIDIAN</div>
+            <div class="watch__date">18</div>
+            <div class="watch__hand watch__hand--hour"></div>
+            <div class="watch__hand watch__hand--minute"></div>
+            <div class="watch__hand watch__hand--second"></div>
+            <div class="watch__pin"></div>
+          </div>
+          <div class="watch__crystal"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__copy">
+      <h1 class="hero__title">Time, held<br>precisely.</h1>
+      <p class="hero__sub">A mechanical watch made from three hundred parts and one continuous obsession: that the second hand never lies.</p>
+      <a href="#assembly" class="hero__scroll">
+        <span>See it come together</span>
+        <svg width="14" height="22" viewBox="0 0 14 22"><path d="M7 1v18M1 13l6 7 6-7" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= ASSEMBLY (pinned scroll) ================= -->
+  <section class="assembly" id="assembly">
+    <div class="assembly__pin">
+      <div class="watch-stage watch-stage--assembly">
+        <div class="watch watch--assembly" id="asmWatch">
+          <div class="watch__case" id="asmCase"></div>
+          <div class="watch__bezel"></div>
+          <div class="watch__movement-overlay" id="asmMovement">
+            <div class="gear gear--a"></div>
+            <div class="gear gear--b"></div>
+          </div>
+          <div class="watch__dial">
+            <div class="watch__indices" id="asmIndices"></div>
+            <div class="watch__grooves" id="asmGrooves"></div>
+            <div class="watch__brand">MERIDIAN</div>
+            <div class="watch__date">18</div>
+            <div class="watch__hand watch__hand--hour"></div>
+            <div class="watch__hand watch__hand--minute"></div>
+            <div class="watch__hand watch__hand--second"></div>
+            <div class="watch__pin"></div>
+          </div>
+          <div class="watch__crystal" id="asmCrystal"></div>
+        </div>
+      </div>
+
+      <div class="assembly__callouts">
+        <div class="callout" data-stage="0">
+          <span class="callout__num">1 — Case</span>
+          <h3>Cold-forged, not cast.</h3>
+          <p>A single billet of 316L steel is pressed, turned, then hand-polished for eleven hours until the bevels catch light like a knife's edge.</p>
+        </div>
+        <div class="callout" data-stage="1">
+          <span class="callout__num">2 — Movement</span>
+          <h3>247 parts, one pair of hands.</h3>
+          <p>Each movement is assembled start to finish by a single watchmaker, who signs the rotor when the last screw is set.</p>
+        </div>
+        <div class="callout" data-stage="2">
+          <span class="callout__num">3 — Dial</span>
+          <h3>Cut by a machine from 1962.</h3>
+          <p>Our guilloché lathes are older than most of our watchmakers. Nothing built since cuts a cleaner line into brass.</p>
+        </div>
+        <div class="callout" data-stage="3">
+          <span class="callout__num">4 — Crystal</span>
+          <h3>Sapphire, domed to the wrist.</h3>
+          <p>Nine Mohs of hardness, curved to sit flush against your skin — it will outlast the strap, the case, and probably you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MOVEMENT ================= -->
+  <section class="movement" id="movement">
+    <div class="movement__visual reveal">
+      <div class="movement__ring">
+        <div class="gear gear--large"></div>
+        <div class="gear gear--small gear--small-1"></div>
+        <div class="gear gear--small gear--small-2"></div>
+        <div class="jewel jewel--1"></div>
+        <div class="jewel jewel--2"></div>
+        <div class="jewel jewel--3"></div>
+      </div>
+    </div>
+    <div class="movement__specs reveal">
+      <h2>Caliber M-247</h2>
+      <p class="movement__intro">Every Meridian runs on the same in-house automatic caliber — no rebadged suppliers, no shortcuts.</p>
+      <dl class="spec-list">
+        <div><dt>Power reserve</dt><dd>70 hours</dd></div>
+        <div><dt>Frequency</dt><dd>28,800 vph · 4 Hz</dd></div>
+        <div><dt>Jewels</dt><dd>31</dd></div>
+        <div><dt>Accuracy</dt><dd>&minus;4 / +6 sec per day</dd></div>
+        <div><dt>Water resistance</dt><dd>100 m</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= MATERIALS ================= -->
+  <section class="materials" id="materials">
+    <div class="materials__head reveal">
+      <h2>Choose what sits<br>against your wrist.</h2>
+      <p>Drag sideways. Tilt each one — the light behaves differently on every metal.</p>
+    </div>
+    <div class="materials__rail" id="materialsRail">
+      <article class="material-card" data-tilt>
+        <div class="material-card__swatch swatch--steel"></div>
+        <h3>Argent Steel</h3>
+        <p>316L surgical steel, mirror-polished on the bevels, brushed flat on the lugs.</p>
+      </article>
+      <article class="material-card" data-tilt>
+        <div class="material-card__swatch swatch--titanium"></div>
+        <h3>Grade 5 Titanium</h3>
+        <p>Forty percent lighter than steel. Cool to the touch even in July.</p>
+      </article>
+      <article class="material-card" data-tilt>
+        <div class="material-card__swatch swatch--rosegold"></div>
+        <h3>18k Rose Gold</h3>
+        <p>Cast in-house from reclaimed gold, alloyed warmer than the industry standard.</p>
+      </article>
+      <article class="material-card" data-tilt>
+        <div class="material-card__swatch swatch--dlc"></div>
+        <h3>Black DLC</h3>
+        <p>A diamond-like carbon coating over steel — harder than the metal underneath it.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= EDITIONS ================= -->
+  <section class="editions" id="editions">
+    <h2 class="editions__title reveal">Three watches.<br>One obsession.</h2>
+
+    <article class="edition reveal">
+      <div class="edition__mini"><div class="mini-watch mini-watch--blue"></div></div>
+      <div class="edition__text">
+        <span class="edition__eyebrow">The Voyager</span>
+        <h3>Built for the wrong time zone.</h3>
+        <p>A true GMT complication with an independently set fourth hand, so the city you left and the one you're in both stay honest.</p>
+        <div class="edition__price">$4,200</div>
+      </div>
+    </article>
+
+    <article class="edition edition--reverse reveal">
+      <div class="edition__mini"><div class="mini-watch mini-watch--gold"></div></div>
+      <div class="edition__text">
+        <span class="edition__eyebrow">The Atelier</span>
+        <h3>Dressed for the room, not the résumé.</h3>
+        <p>Rose gold, a hand-guilloché dial, and a case slim enough to slide under a cuff without a fight.</p>
+        <div class="edition__price">$7,800</div>
+      </div>
+    </article>
+
+    <article class="edition reveal">
+      <div class="edition__mini"><div class="mini-watch mini-watch--black"></div></div>
+      <div class="edition__text">
+        <span class="edition__eyebrow">The Field</span>
+        <h3>Made to be forgotten on your wrist.</h3>
+        <p>DLC-coated titanium, a matte dial that never glares, and a strap that only gets better with weather.</p>
+        <div class="edition__price">$3,600</div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= CTA / RESERVE ================= -->
+  <section class="cta" id="reserve">
+    <div class="cta__inner reveal">
+      <h2>Each batch is 200 watches.<br>The next one closes soon.</h2>
+      <p>Leave your email and we'll tell you the hour it opens — not a minute before.</p>
+      <form id="reserveForm" class="cta__form" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@somewhere.com" required>
+        <button type="submit">Reserve a place</button>
+      </form>
+      <p class="cta__note" id="formNote" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <span class="footer__mark">MERIDIAN</span>
+    <nav class="footer__links">
+      <a href="#assembly">Craft</a>
+      <a href="#movement">Movement</a>
+      <a href="#materials">Materials</a>
+      <a href="#editions">Editions</a>
+    </nav>
+  </div>
+  <p class="footer__fine">Meridian Watch Co. — a fictional atelier, built to demonstrate this page. No watches are actually shipped.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
